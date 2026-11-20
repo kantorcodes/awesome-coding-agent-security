@@ -1,0 +1,42 @@
+name: Suggest an entry
+description: Propose an incident, advisory, defense, tool or paper.
+labels: [suggestion]
+body:
+  - type: input
+    id: link
+    attributes:
+      label: Primary source
+      description: Vendor advisory, NVD record, original research or official documentation.
+    validations:
+      required: true
+  - type: input
+    id: description
+    attributes:
+      label: One-line description
+      description: Starts with a capital letter, ends with a period, no marketing words.
+    validations:
+      required: true
+  - type: dropdown
+    id: section
+    attributes:
+      label: Section
+      options:
+        - Incidents and Campaigns
+        - Advisories by Tool
+        - Attack Vectors
+        - Defenses and Settings
+        - Tools
+        - Research and Talks
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: The entry is about coding agents or MCP.
+          required: true
+        - label: Every CVE number was checked on NVD.
+          required: true
+        - label: No victim is named and no live malicious repository is linked.
+          required: true

@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a vulnerability in a coding agent
+    url: https://github.com/nukoe-labs/awesome-coding-agent-security/blob/main/contributing.md#entry-criteria
+    about: Report vulnerabilities to the vendor first. Only published advisories are listed here.
