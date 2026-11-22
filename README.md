@@ -151,6 +151,7 @@ Fixed versions come from the vendor advisory. Update before opening untrusted co
 - [MCP security best practices](https://modelcontextprotocol.io/specification/draft/basic/security_best_practices) - Official guidance on confused deputy, token passthrough, session hijacking and local server compromise.
 - [GitHub Actions security hardening](https://docs.github.com/en/actions/security-for-github-actions/security-guides/security-hardening-for-github-actions) - Least-privilege tokens, pinned actions and untrusted input for workflows that run agents.
 - [npm trusted publishing](https://docs.npmjs.com/trusted-publishers) - Publish from CI with OIDC instead of long-lived tokens that worms steal and reuse.
+- [HOL Guard](https://hol.org/guard) - Open-source local-first policy layer that reviews supported coding-agent shell, file, package-install and MCP actions before execution. Coverage depends on the agent integration.
 
 ## Tools
 
